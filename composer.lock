@@ -4,9 +4,103 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6c2886ee03486f23a9abb1c37afc6b31",
+    "hash": "5c41079d93d79237c2a7b57c5088d392",
     "packages": [
-
+        {
+            "name": "ilya/block",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ilya-dev/block.git",
+                "reference": "cb62d47a73ff041bca05405ff427c642e7a76e32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ilya-dev/block/zipball/cb62d47a73ff041bca05405ff427c642e7a76e32",
+                "reference": "cb62d47a73ff041bca05405ff427c642e7a76e32",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Block\\": "src/Block/"
+                },
+                "files": [
+                    "tests/Dummy.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ilya S",
+                    "email": "public.ilya.s@gmail.com"
+                }
+            ],
+            "description": "Parsing docblocks made easy",
+            "keywords": [
+                "blocks",
+                "docblocks",
+                "docs",
+                "documentation",
+                "parsing",
+                "php",
+                "reflection"
+            ],
+            "time": "2014-06-01 07:17:39"
+        },
+        {
+            "name": "ilya/creator",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ilya-dev/creator.git",
+                "reference": "ff524870a3a081edb57992024076290d2d150e1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ilya-dev/creator/zipball/ff524870a3a081edb57992024076290d2d150e1f",
+                "reference": "ff524870a3a081edb57992024076290d2d150e1f",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpspec/phpspec": "2.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Creator\\": "source/Creator"
+                },
+                "classmap": [
+                    "tests/dummies"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ilya S",
+                    "email": "public.ilya.s@gmail.com"
+                }
+            ],
+            "description": "Automatic dependencies resolution.",
+            "keywords": [
+                "automatic",
+                "dependencies",
+                "resolution"
+            ],
+            "time": "2014-06-10 17:15:00"
+        }
     ],
     "packages-dev": [
         {

@@ -1,4 +1,8 @@
 {
+    "require": {
+        "ilya/block": "~1",
+        "ilya/creator": "~2"
+    },
     "require-dev": {
         "phpspec/phpspec": "2.0.*"
     },
