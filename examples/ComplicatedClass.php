@@ -4,7 +4,7 @@
  * @depend Foo
  * @depend Bar baz
  */
-class ComplicatedClass {
+class ComplicatedClass extends Foundation\Base {
 
     public function init($switch = 'on')
     {
