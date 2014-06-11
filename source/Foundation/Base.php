@@ -1,6 +1,7 @@
 <?php namespace Foundation;
 
 use Block\Block, Creator\Creator;
+use ReflectionClass;
 
 class Base {
 
@@ -9,11 +10,19 @@ class Base {
         $arguments = func_get_args();
 
         // set properties...
+        var_dump($this->__getDependencies());exit;
 
         if (method_exists($this, 'init'))
         {
             call_user_func_array([$this, 'init'], $arguments);
         }
+    }
+
+    protected function __getDependencies()
+    {
+        $lines = (new Block)->reflector(new ReflectionClass($this))->getLines();
+
+        return $lines;
     }
 
 }
