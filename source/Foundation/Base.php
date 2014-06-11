@@ -8,13 +8,11 @@ class Base {
     {
         $arguments = func_get_args();
 
-        // ... set properties
+        // set properties...
 
         if (method_exists($this, 'init'))
         {
-            call_user_func_array(
-                [$this, 'init'], array_slice($arguments, $someIndex)
-            );
+            call_user_func_array([$this, 'init'], $arguments);
         }
     }
 
