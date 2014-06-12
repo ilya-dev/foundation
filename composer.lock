@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5c41079d93d79237c2a7b57c5088d392",
+    "hash": "3245f88975fe9e24b396f1661a39cfbf",
     "packages": [
         {
             "name": "ilya/block",
-            "version": "1.3.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ilya-dev/block.git",
-                "reference": "cb62d47a73ff041bca05405ff427c642e7a76e32"
+                "reference": "e218d0292150826bf9625142e3bdb6eb9124a9f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ilya-dev/block/zipball/cb62d47a73ff041bca05405ff427c642e7a76e32",
-                "reference": "cb62d47a73ff041bca05405ff427c642e7a76e32",
+                "url": "https://api.github.com/repos/ilya-dev/block/zipball/e218d0292150826bf9625142e3bdb6eb9124a9f6",
+                "reference": "e218d0292150826bf9625142e3bdb6eb9124a9f6",
                 "shasum": ""
             },
             "require": {
@@ -55,7 +55,7 @@
                 "php",
                 "reflection"
             ],
-            "time": "2014-06-01 07:17:39"
+            "time": "2014-06-11 17:58:36"
         },
         {
             "name": "ilya/creator",
