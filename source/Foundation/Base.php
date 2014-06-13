@@ -20,7 +20,7 @@ class Base {
 
     protected function __getDependencies()
     {
-        $lines = (new Block)->reflector(new ReflectionClass($this))->getLines();
+        $lines = (new Block($this))->itself()->getLines();
 
         return $lines;
     }
