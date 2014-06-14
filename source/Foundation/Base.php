@@ -28,7 +28,17 @@ class Base {
             return $line->getTag() == 'depend';
         });
 
-        return $lines;
+        return array_map(function(Line $line)
+        {
+            $chunks = explode(' ', $line->stripTag());
+
+            if (count($chunks) == 1)
+            {
+                $chunks[] = null;
+            }
+
+            return $chunks;
+        }, $lines);
     }
 
 }
