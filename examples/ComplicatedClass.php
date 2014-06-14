@@ -1,6 +1,8 @@
 <?php
 
 /**
+ * This class has some dependencies.
+ *
  * @depend Foo
  * @depend Bar baz
  */

@@ -1,6 +1,7 @@
 <?php namespace Foundation;
 
-use Block\Block, Creator\Creator;
+use Block\Block, Block\Line;
+use Creator\Creator;
 use ReflectionClass;
 
 class Base {
@@ -21,6 +22,11 @@ class Base {
     protected function __getDependencies()
     {
         $lines = (new Block($this))->itself()->getLines();
+
+        $lines = array_filter($lines, function(Line $line)
+        {
+            return $line->getTag() == 'depend';
+        });
 
         return $lines;
     }
