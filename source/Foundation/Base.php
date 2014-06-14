@@ -8,9 +8,24 @@ class Base {
 
     public function __construct()
     {
+        $this->__setDependencies();
+
         if (method_exists($this, 'init'))
         {
             call_user_func_array([$this, 'init'], func_get_args());
+        }
+    }
+
+    protected function __setDependencies()
+    {
+        foreach ($this->__getDependencies() as $dependency)
+        {
+            if ( ! isset ($dependency[1]))
+            {
+                $dependency[1] = lcfirst($dependency[0]);
+            }
+
+            $this->{$dependency[1]} = Creator::create($dependency[0]);
         }
     }
 
