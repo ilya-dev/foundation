@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "ilya/block",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ilya-dev/block.git",
-                "reference": "e218d0292150826bf9625142e3bdb6eb9124a9f6"
+                "reference": "0d96f5dda27d7e80bab6133073d28128e3844bba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ilya-dev/block/zipball/e218d0292150826bf9625142e3bdb6eb9124a9f6",
-                "reference": "e218d0292150826bf9625142e3bdb6eb9124a9f6",
+                "url": "https://api.github.com/repos/ilya-dev/block/zipball/0d96f5dda27d7e80bab6133073d28128e3844bba",
+                "reference": "0d96f5dda27d7e80bab6133073d28128e3844bba",
                 "shasum": ""
             },
             "require": {
@@ -55,7 +55,7 @@
                 "php",
                 "reflection"
             ],
-            "time": "2014-06-11 17:58:36"
+            "time": "2014-06-14 16:38:14"
         },
         {
             "name": "ilya/creator",
